@@ -29,13 +29,13 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="Lateral1" src="img/lateral.jpg">
-        <img id="lateral1" crossorigin="anonymous" src="img/patio.png">
-        <img id="techo1" crossorigin="anonymous" src="img/techo.jpg">
-        <img id="techo1" crossorigin="anonymous" src="img/cubierta.png">
+        <img id="Entrada1" src="img/entrada.jpg">
+        <img id="Entrada-icono" crossorigin="anonymous" src="img/Entrada.png">
+        <img id="Techo1" crossorigin="anonymous" src="img/techo.jpg">
+        <img id="Techo-icono" crossorigin="anonymous" src="img/Cubierta.png">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <img id="entrada1" crossorigin="anonymous" src="img/entrada.jpg">
-        <img id="entrada1" crossorigin="anonymous" src="img/entrada.png">
+        <img id="Patio1" crossorigin="anonymous" src="img/lateral.jpg">
+        <img id="Patio-icono" crossorigin="anonymous" src="img/Patio.png">
 
         <!-- Image link template to be reused. -->
         <script id="link" type="text/nunjucks">
@@ -52,13 +52,13 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#entrada1"></a-sky>
+      <a-sky id="image-360" radius="10" src="#Entrada1"></a-sky>
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: #link" data-src="#entrada" data-thumb="#entrada"></a-entity>
-        <a-entity template="src: #link" data-src="#lateral" data-thumb="#lateral"></a-entity>
-        <a-entity template="src: #link" data-src="#techo" data-thumb="#techo1"></a-entity>
+        <a-entity template="src: #link" data-src="#Entrada1" data-thumb="#Entrada-icono"></a-entity>
+        <a-entity template="src: #link" data-src="#Techol" data-thumb="#Techo-icono"></a-entity>
+        <a-entity template="src: #link" data-src="#Patio1" data-thumb="#Patio-icono"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->
