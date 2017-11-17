@@ -29,13 +29,13 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="lateral" src="img/lateral.jpg">
-        <img id="lateral" crossorigin="anonymous" src="img/lateral.png">
-        <img id="techo" crossorigin="anonymous" src="img/techo.png">
-        <img id="entrada" crossorigin="anonymous" src="img/entrada.png">
+        <img id="lateral1" src="img/lateral.jpg">
+        <img id="lateral1" crossorigin="anonymous" src="img/lateral.png">
+        <img id="techo1" crossorigin="anonymous" src="img/techo.png">
+        <img id="entrada1" crossorigin="anonymous" src="img/entrada.png">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <img id="techo" crossorigin="anonymous" src="img/techo.jpg">
-        <img id="entrada" crossorigin="anonymous" src="img/entrada.jpg">
+        <img id="techo1" crossorigin="anonymous" src="img/techo.jpg">
+        <img id="entrada1" crossorigin="anonymous" src="img/entrada.jpg">
 
         <!-- Image link template to be reused. -->
         <script id="link" type="text/nunjucks">
@@ -52,13 +52,13 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#kieran"></a-sky>
+      <a-sky id="image-360" radius="10" src="#entrada1"></a-sky>
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
         <a-entity template="src: #link" data-src="#entrada" data-thumb="#entrada"></a-entity>
         <a-entity template="src: #link" data-src="#lateral" data-thumb="#lateral"></a-entity>
-        <a-entity template="src: #link" data-src="#techo" data-thumb="#techo"></a-entity>
+        <a-entity template="src: #link" data-src="#techo" data-thumb="#techo1"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->
