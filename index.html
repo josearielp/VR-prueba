@@ -25,30 +25,17 @@
             }
         </style>
     
-    <!-- DELETE SECTION BELOW if you forked code. This is analytics code to track popularity of content for a 
-         meetup event tracking. -->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-73311422-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-    <!-- End Analytics Code. Delete section above if you plan to deploy your own application. The analytics was to help with planning of a meetup -->
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <img id="kieran" src="img/lateral.jpg">
-        <img id="kieran-thumb" crossorigin="anonymous" src="img/kieran-thumb.png">
-        <img id="christian-thumb" crossorigin="anonymous" src="img/christian-thumb.png">
-        <img id="eddie-thumb" crossorigin="anonymous" src="img/eddie-thumb.png">
+        <img id="lateral" src="img/lateral.jpg">
+        <img id="lateral" crossorigin="anonymous" src="img/lateral.png">
+        <img id="techo" crossorigin="anonymous" src="img/techo.png">
+        <img id="entrada" crossorigin="anonymous" src="img/eddie-thumb.png">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <img id="christian" crossorigin="anonymous" src="img/techo.jpg">
-        <img id="eddie" crossorigin="anonymous" src="img/entrada.jpg">
+        <img id="techo" crossorigin="anonymous" src="img/techo.jpg">
+        <img id="entrada" crossorigin="anonymous" src="img/entrada.jpg">
 
         <!-- Image link template to be reused. -->
         <script id="link" type="text/nunjucks">
@@ -69,9 +56,9 @@
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: #link" data-src="#christian" data-thumb="#christian-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#kieran" data-thumb="#kieran-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#eddie" data-thumb="#eddie-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#entrada" data-thumb="#entrada"></a-entity>
+        <a-entity template="src: #link" data-src="#lateral" data-thumb="#lateral"></a-entity>
+        <a-entity template="src: #link" data-src="#techo" data-thumb="#techo"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->
